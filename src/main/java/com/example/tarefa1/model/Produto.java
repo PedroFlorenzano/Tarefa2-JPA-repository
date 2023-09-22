@@ -33,7 +33,6 @@ public class Produto {
     @Column(name = "prod_prec", length = 200, nullable = false)
     private Double preco;
 
-    // @ManyToOne(cascade = CascadeType.ALL)
     @ManyToOne
     @JoinColumn(name =  "categoriaProdutos_id")
     private Categoria categoriaProdutos;

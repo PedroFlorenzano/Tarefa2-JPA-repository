@@ -30,7 +30,6 @@ public class Categoria {
     @Column(name = "cat_nome",length = 200, nullable = false)
     private String  nome;
 
-    // @OneToMany(mappedBy = "categoriaProdutos", fetch = FetchType.EAGER)
     @OneToMany(mappedBy = "categoriaProdutos")
     private List<Produto> produtos;
 
