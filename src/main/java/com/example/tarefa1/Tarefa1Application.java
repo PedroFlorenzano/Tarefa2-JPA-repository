@@ -90,7 +90,7 @@ public class Tarefa1Application {
 
 			System.out.println("Deve retornar uma categoria pelo parâmetro e todos os produtos relacionados a essa categoria");
 			Categoria categoriaMetodo2 = categoriaRepository.findCategoryById(2L);
-			System.out.println("Categoria encontrada: " + categoriaMetodo2);
+			
 			for (Produto produto : categoriaMetodo2.getProdutos()) {
 				System.out.println("Produtos da categoria encontrado: " + produto.getNome() + " - " + "Preço do Produto: " + produto.getPreco());
 			}
