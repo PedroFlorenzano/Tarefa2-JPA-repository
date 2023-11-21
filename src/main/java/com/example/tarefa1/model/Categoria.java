@@ -10,6 +10,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -22,6 +23,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 @Table(name = "tbl_categorias")
+@Builder
 public class Categoria {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

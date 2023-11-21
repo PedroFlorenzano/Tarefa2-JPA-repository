@@ -16,5 +16,4 @@ public interface CategoriaRepository extends JpaRepository<Categoria, Long> {
 
     @Query("select cc from Categoria cc left join fetch cc.produtos c where cc.id = :id ")
     Categoria findCategoryById(@Param("id") Long id);
-    
 }
